@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Joshita!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s infinite;
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3.5em;
+            color: #ff6f61;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #ff8563;
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #444;
+            margin: 20px auto;
+            line-height: 1.8;
+            max-width: 700px;
+        }
+
+        .proposal {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+
+        .proposal h3 {
+            font-size: 2.5em;
+            color: #ff6f61;
+            margin-bottom: 15px;
+        }
+
+        .proposal p {
+            font-size: 1.3em;
+            color: #444;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #ff6f61;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff8563;
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Background Hearts */
+        .heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #ff6f61;
+            border-radius: 50% 50% 0 0;
+            transform: rotate(-45deg);
+            animation: floatUp 8s infinite ease-in-out;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #ff6f61;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -25px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: -25px;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-800px) scale(1.2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="https://www.jiosaavn.com/song/i-love-you/RyFYbj9,XV0" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Main Content -->
+    <h1>Happy Birthday, Joshita! Baby🎉</h1>
+    <h2>Wishing you all the love and happiness</h2>
+    <p>You are the most precious part of my life. On this special day, I want you to know how much you mean to me. May this year bring you endless joy, laughter, and success.</p>
+    
+    <div class="proposal">
+        <h3>My Dearest Joshita,
+            From the bottom of my heart, I love you more than words can express. Will you be mine forever? ❤️</h3>
+        <div class="buttons">
+            <button id="yesButton" onclick="showMessage('yes')">Yes</button>
+            <button id="noButton" onclick="showMessage('no')">No</button>
+        </div>
+    </div>
+
+    <!-- Floating Hearts -->
+    <div class="heart" style="left: 10%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 30%; animation-delay: 3s;"></div>
+    <div class="heart" style="left: 50%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 70%; animation-delay: 4s;"></div>
+    <div class="heart" style="left: 90%; animation-delay: 1s;"></div>
+
+    <footer>
+        Made with ❤️ by Sounak
+    </footer>
+
+    <!-- JavaScript to Control Button Actions -->
+    <script>
+        function showMessage(answer) {
+            if (answer === 'yes') {
+                alert("Yay! You made me the happiest person alive! ❤️");
+            } else {
+                // Override 'No' button to still act like 'Yes'
+                alert("Aww, don't be shy! I know it's still a YES! 😊❤️");
+            }
+        }
+    </script>
+</body>
+</html>
+
+
